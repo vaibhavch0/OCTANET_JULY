@@ -1,12 +1,38 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GreenFuture: Empowering communities to take action for a sustainable future.">
+    <meta name="keywords" content="sustainability, environment, green, renewable energy, plastic waste reduction, urban tree planting">
     <title>GreenFuture: Your Path to a Sustainable Tomorrow</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        #hero {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 100vh;
+        }
+        #hero video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .hero-text {
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -24,8 +50,14 @@
     </header>
 
     <section id="hero">
+        <video autoplay muted loop>
+            <source src="images/4485536-hd_1920_1080_30fps.mp4" type="video/mp4">
+            <source src="your-video-file.webm" type="video/webm">
+            <source src="your-video-file.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
         <div class="hero-text">
-            <h1>Join the Movement for a Greener Planet</h1>
+            <h1><b>Join the Movement for a Greener Planet</b></h1>
             <p>Empowering communities to take action for a sustainable future.</p>
             <button onclick="getInvolved()">Get Involved Now</button>
         </div>
@@ -86,4 +118,3 @@
     <script src="scripts.js"></script>
 </body>
 </html>
- 
