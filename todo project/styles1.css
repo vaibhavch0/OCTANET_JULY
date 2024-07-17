@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+button {
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+main {
+    padding: 20px;
+}
+
+.task-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.task {
+    background-color: #f4eeeec7;
+    border: 1px solid #3333337f;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden; /* Ensure the content is contained within the box */
+    word-wrap: break-word; /* Break long words */
+    white-space: normal; 
+}
+.task:hover {
+    overflow-y: auto; /* Enable vertical scroll on hover */
+}
+.task.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.task .edit {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    background: #ffc107;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.task:hover .edit {
+    display: block;
+}
+
+.task.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+
+
+
+.task .delete {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: #dc3545;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.task:hover .delete {
+    display: block;
+}
